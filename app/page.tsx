@@ -13,6 +13,11 @@ import Link from "next/link";
 import AliasGenerator from "@/components/alias-generator";
 import Header from "@/components/header";
 import ScrollBtn from "@/components/scroll-btn";
+import HeaderAd from "@/components/ads/header-ad";
+import FooterAd from "@/components/ads/footer-ad";
+import SidebarAd from "@/components/ads/sidebar-ad";
+import MiddleAd from "@/components/ads/middle-ad";
+import MiddleSquareAd from "@/components/ads/middle-sqaure-ad";
 
 export default function GmailAliasGenerator() {
 	return (
@@ -21,15 +26,7 @@ export default function GmailAliasGenerator() {
 			<Header />
 
 			{/* Ad Banner */}
-			<div className="w-full bg-muted/30 border-b px-6 sm:px-0">
-				<div className="container py-4 mx-auto">
-					<div className="flex justify-center">
-						<div className="w-[728px] h-[90px] bg-muted rounded-lg flex items-center justify-center text-muted-foreground text-sm">
-							Advertisement Space (728x90)
-						</div>
-					</div>
-				</div>
-			</div>
+			<HeaderAd />
 
 			<div className="container py-8 mx-auto px-6 sm:px-0">
 				<div className="flex gap-8">
@@ -104,17 +101,13 @@ export default function GmailAliasGenerator() {
 					{/* Sidebar Ad */}
 					<div className="hidden lg:block w-[300px] shrink-0">
 						<div className="sticky top-24">
-							<div className="w-[300px] h-[600px] bg-muted rounded-lg flex items-center justify-center text-muted-foreground text-sm">
-								<div className="text-center">
-									<p>Advertisement</p>
-									<p>Space</p>
-									<p>(300x600)</p>
-								</div>
-							</div>
+							<SidebarAd />
 						</div>
 					</div>
 				</div>
-
+				<div className="block lg:hidden">
+					<MiddleAd />
+				</div>
 				{/* SEO Content Section */}
 				<div className="mt-16 max-w-4xl mx-auto px-6 sm:px-0">
 					{/* Main SEO Content */}
@@ -187,7 +180,8 @@ export default function GmailAliasGenerator() {
 							</div>
 						</CardContent>
 					</Card>
-
+					{/* Middle square Ad */}
+					<MiddleSquareAd adSlot="3937537087" />
 					{/* Benefits Comparison */}
 					<Card className="mb-8">
 						<CardContent className="p-6">
@@ -280,7 +274,8 @@ export default function GmailAliasGenerator() {
 							</div>
 						</CardContent>
 					</Card>
-
+					{/* Middle square Ad */}
+					<MiddleSquareAd adSlot="5411235007" />
 					{/* Start Generating */}
 					<Card className="mb-8">
 						<CardContent className="p-6">
@@ -351,11 +346,7 @@ export default function GmailAliasGenerator() {
 			<footer className="border-t bg-muted/30 mt-16">
 				<div className="container py-8 mx-auto px-6 sm:px-0">
 					{/* Footer Ad */}
-					<div className="flex justify-center mb-8">
-						<div className="w-[728px] h-[90px] bg-muted rounded-lg flex items-center justify-center text-muted-foreground text-sm">
-							Advertisement Space (728x90)
-						</div>
-					</div>
+					<FooterAd />
 
 					<div className="text-center text-muted-foreground">
 						<p>
