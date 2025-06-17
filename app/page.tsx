@@ -21,7 +21,7 @@ export default function GmailAliasGenerator() {
 			<Header />
 
 			{/* Ad Banner */}
-			<div className="w-full bg-muted/30 border-b">
+			<div className="w-full bg-muted/30 border-b px-6 sm:px-0">
 				<div className="container py-4 mx-auto">
 					<div className="flex justify-center">
 						<div className="w-[728px] h-[90px] bg-muted rounded-lg flex items-center justify-center text-muted-foreground text-sm">
@@ -31,16 +31,16 @@ export default function GmailAliasGenerator() {
 				</div>
 			</div>
 
-			<div className="container py-8 mx-auto">
+			<div className="container py-8 mx-auto px-6 sm:px-0">
 				<div className="flex gap-8">
 					{/* Main Content */}
 					<div className="flex-1">
 						{/* Hero Section */}
 						<div className="text-center mb-12">
-							<h2 className="text-4xl font-bold tracking-tight mb-4">
+							<h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">
 								Generate Gmail Aliases That Still Land in Your Inbox
 							</h2>
-							<p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+							<p className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto">
 								Create unlimited email variations using Gmail's dot trick and
 								plus aliasing. Perfect for organizing subscriptions, testing,
 								and maintaining privacy while keeping everything in one inbox.
@@ -116,7 +116,7 @@ export default function GmailAliasGenerator() {
 				</div>
 
 				{/* SEO Content Section */}
-				<div className="mt-16 max-w-4xl mx-auto">
+				<div className="mt-16 max-w-4xl mx-auto px-6 sm:px-0">
 					{/* Main SEO Content */}
 					<div className="text-center mb-12">
 						<h2 className="text-3xl font-bold tracking-tight mb-4">
@@ -349,7 +349,7 @@ export default function GmailAliasGenerator() {
 
 			{/* Footer */}
 			<footer className="border-t bg-muted/30 mt-16">
-				<div className="container py-8 mx-auto">
+				<div className="container py-8 mx-auto px-6 sm:px-0">
 					{/* Footer Ad */}
 					<div className="flex justify-center mb-8">
 						<div className="w-[728px] h-[90px] bg-muted rounded-lg flex items-center justify-center text-muted-foreground text-sm">

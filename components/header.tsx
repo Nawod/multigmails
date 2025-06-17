@@ -17,7 +17,7 @@ import { useTheme } from "next-themes";
 const Header = () => {
 	const { theme, setTheme } = useTheme();
 	return (
-		<header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+		<header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 px-6 sm:px-0">
 			<div className="container flex h-16 items-center justify-between mx-auto">
 				<div className="flex items-center space-x-2">
 					<Mail className="h-6 w-6 text-red-600" />
