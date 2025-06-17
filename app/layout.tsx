@@ -14,6 +14,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/toaster";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -96,6 +97,14 @@ export default function RootLayout({
 			lang="en"
 			suppressHydrationWarning
 		>
+			<head>
+				<Script
+					async
+					src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2660491671296139"
+					crossOrigin="anonymous"
+					strategy="afterInteractive"
+				/>
+			</head>
 			<body className={inter.className}>
 				<ThemeProvider
 					attribute="class"
